@@ -62,12 +62,12 @@
                         </div>
                         <section class="card-body">
                             <div> class="input-group gap-1">
-                                <input class="form-control" placeholder="Nome">
-                                <select class="form-select">
-                                    <option>Normal</option>
-                                    <option>Prioritário</option>
+                                <input id="input-nome" class="form-control" placeholder="Nome">
+                                <select id="select-prioridade" class="form-select">
+                                    <option value="N">Normal</option>
+                                    <option value="P">Prioritário</option>
                                 </select>
-                                <button class="btn btn-primary">Incluir</button>
+                                <button id="btn-incluir" class="btn btn-primary">Incluir</button>
                             </div>
                         </section>
                     </div>
@@ -77,7 +77,7 @@
                         <div class="card-header">
                             <h5 class="card-title">Atendimentos</h5>
                         </div>
-                        <ul class="list-group list-group-flush">
+                        <ul id="ul-lista" class="list-group list-group-flush">
                             <li class="list-group-item">Fulano de Tal</li>
                             <li class="list-group-item">Fulanita</li>
                           </ul>
@@ -91,7 +91,7 @@
                             <h5 class="card-title">Em Atendimento</h5>
                         </article>
                         <section class="card-body">
-                            <p class="card-text display-6 text-center">Fulano de Tal</p>
+                            <p id="display-nome" class="card-text display-6 text-center">Fulano de Tal</p>
                         </section>
                         <footer class="card-footer">
                             <p class="card-text text-center">
@@ -101,7 +101,7 @@
                     <!--card-->
                     <hr>
                     <div class="d-grid gap-2">
-                        <button class="btn btn-primary btn-lg p-4" type="button">Chamar</button>
+                        <button id="btn-chamar" class="btn btn-primary btn-lg p-4" type="button">Chamar</button>
                       </div>
                 </div>
                 <!--col-->
