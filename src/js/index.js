@@ -9,12 +9,18 @@ const listadeAtendimento = new Array();
 
 function incluir() {
     listadeAtendimento.push(inputNome.value)
+    listar();
 }
 
 function listar() {
+  ulLista.innerHTML = ''
   for(let nome of listadeAtendimento){
-    console.log(nome)
+  let li  = document.createElement('li');
+  li.classList.add('list-group-item')
+  li.textContent = nome;
+  ulLista.appendChild(li)
   }
 }
+
 //eventos
 btnIncluir.onckick = incluir
